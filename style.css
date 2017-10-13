@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|PT+Serif');
+
+
+/*font-family: 'Merriweather', serif;
+font-family: 'PT Serif', serif;*/
+
+
+html {
+	font-size: 20px;
+	font-family: 'Merriweather', serif;
+}
+
+body {
+	margin: 0px;
+}
+
+.main {
+	width: 100%;
+	height: 5000px;
+	background-size: 100% 20%;
+	background-repeat: no-repeat;
+}
+
+.navigation {
+	display: block;
+	right: 0;
+	top: 0;
+	width: 270px;
+	height: 40px;
+	background-color: white;
+	position: fixed;
+	z-index: 200;
+}
+
+.link {
+	width: 90px;
+	height: 100%;
+	background-color: red;
+	display: inline-block;
+	float: left;
+}
+
+.site-header {
+	position: absolute;
+	display: block;
+	width: 33rem;
+	height: 10rem;
+	margin-left: 4rem;
+	margin-top: 10rem;
+	background-color: lightgrey;
+}
+
+#nick-rogers {
+	font-size: 3rem;
+	font-weight: 400;
+	display: block;
+	line-height: 35px;
+	letter-spacing: 0.055rem;
+}
+
+#traits {
+	font-size: 2.3rem;
+	font-weight: 300;
+	line-height: 35px;
+	letter-spacing: 0.075rem;
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+.topSection {
+	width: 100%;
+	height: 650px;
+}
+
+
+.section-header-right {
+	display: block;
+	background-color: yellow;
+	width: 20vw;
+	height: 100%;
+	float: right;
+
+}
+
+.section-header-left {
+	display: block;
+	background-color: yellow;
+	width: 20vw;
+	height: 100%;
+	float: left;
+
+}
+
+.section {
+	width: 100%;
+	height: 35vw;
+	position: relative;
+	margin-bottom: 400px;
+}
+
+.projects-left {
+	width: 65%;
+	height: 0;
+	background-color: pink;
+	margin-left: 4rem;
+}
+
+.projects-right {
+	width: 65%;
+	height: 0;
+	background-color: pink;
+	margin-left: 18rem;
+}
+
+.proj {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	background-color: black;
+	z-index: 10;
+}
+
+.proj:hover {
+	z-index: 100;
+}
+
+#proj1-2 {
+	margin-left: 8.5%;
+	background-color: blue;
+}
+
+#proj1-3 {
+	margin-left: 17%;
+	background-color: red;
+}
+
+#proj1-4 {
+	margin-left: 25.5%;
+	background-color: orange;
+}
+
+#proj2-2 {
+	margin-left: 8.5%;
+	background-color: blue;
+}
+
+#proj2-3 {
+	margin-left: 17%;
+	background-color: red;
+}
+
+#proj2-4 {
+	margin-left: 25.5%;
+	background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
