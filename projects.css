@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+html {
+	font-size: 20px;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-size: 100% 75%;
+	background-repeat: no-repeat;
+	background-color: #f5f4fb;
+}
+
+a {
+	color: #26363c;
+	text-decoration: none;
+}
+
+a::visited {
+	color: #26363c;
+	text-decoration: none;
+}
+
+.top-proj{
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(-90deg, #e1def2, #f5f4fb);
+	text-align: center;
+	top: 0;
+	position: fixed;
+	transition: all 0.5s ease;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	border-color: #4d96ea;
+	z-index: 200;
+}
+
+
+.ham {
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 2rem;
+}
+
+#nav-icon3 {
+  width: 30px;
+  height: 18px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 18px;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #4d96ea;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  border-bottom-left-radius: 15px;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 8px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 16px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 7.65px;
+  width: 0%;
+  left: 50%;
+  border-bottom-left-radius: 0px;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg);
+  border-bottom-left-radius: 0px;
+}
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  border-bottom-left-radius: 0px;
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 7.65px;
+  width: 0%;
+  left: 50%;
+  border-bottom-left-radius: 0px;
+}
+
+.menu {
+	position: absolute;
+	width: 80px;
+	height: 100px;
+	right: 0;
+	margin-right: 50px;
+	margin-top: 80px;
+	z-index: 202;
+	font-size: 0.7rem;
+	color: #26363c;
+	text-align: right;
+}
+
+.page-link {
+	display: none;
+	width: 100%;
+	height: 33.33%;
+	float: left;
+}
+
+/*.page-link-visible {
+	display: block;
+	width: 100%;
+	height: 33.33%;
+	float: left;
+}*/
+
+.page-link:hover {
+	color: #4d96ea;
+}
+
+
+/* Styling for header text for projects is below */ 
+
+
+.content {
+	display: block;
+	width: 100%;
+	height: 2000px;
+	z-index: 5;
+	text-align: center;
+}
+
+.header-image {
+	display: inline-block;
+	width: 80%;
+	height: 0;
+	padding-bottom: 40%;
+	background-color: blue;
+}
+
+.section-text {
+	display: inline-block;
+	width: 40%;
+	min-width: 300px;
+	height: 0;
+	margin-top: 50px;
+	padding-bottom: 30%;
+	background-color: lightgrey;
+}
+
+.section-text h1, h2, p {
+	display: inline-block;
+	width: 100%;
+	font-weight: 100;
+	float: left;
+}
+
+.section-text h1 {
+	width: 100%;
+	display: block;
+	left: 0;
+	text-align: left;
+	border-bottom: 2px solid #4d96ea;
+	color: #26363c;
+	font-size: 1.8rem;
+}
+
+.section-text h2 {
+	width: 70%;
+	display: block;
+	
+	left: 0;
+	text-align: left;
+	margin-top: -0.7rem;
+	font-size: 0.8rem;
+	color: #4d96ea;
+}
+
+.section-text p {
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+.image-container {
+	display: inline-block;
+	width: 100%;
+	margin-top: 200px;
+	padding-left: 10%;
+}
+
+.large-proj {
+	display: block;
+	width: 500px;
+	height: 400px;
+	background-color: black;
+	float: left;
+	margin-left: 2%;
+}
+
+
