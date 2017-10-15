@@ -25,9 +25,19 @@ $(window).scroll(function(){
 
 
 
-// Causes hamburger icon to switch to x button
+// Causes hamburger icon to switch to x button, causes the menu bar to become visible 
+var pageLinkOpen = false;
 $('#nav-icon3').click(function(){
 	$(this).toggleClass('open');
+	//$('.page-link').css('display', 'block');
+	if(pageLinkOpen){
+		$('.page-link').fadeOut(400);
+		pageLinkOpen = false;
+	}
+	else {
+		$('.page-link').fadeIn(400);
+		pageLinkOpen = true;
+	}
 });
 
 
