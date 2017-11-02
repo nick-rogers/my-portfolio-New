@@ -365,7 +365,7 @@ height: 1000px;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 667px) {
 	.stack {
 		width: 100%;
 		height: 160vw;
