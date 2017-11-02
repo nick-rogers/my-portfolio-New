@@ -3,6 +3,11 @@
 html {
 	font-size: 20px;
 	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+html::selection, h1::selection, h2::selection, h3::selection {
+	color: yellow;
 }
 
 body {
@@ -14,7 +19,6 @@ body {
 }
 
 h1 {
-	font-family: 'PT Sans', sans-serif;
 	color: #26363c;
 	text-align: center;
 	display: inline-block;
@@ -24,6 +28,17 @@ h1 {
 	margin-right: 2rem;
 	margin-left: 2rem;
 	line-height: 1.9rem;
+	text-shadow: #e7e4f4 2px 1px;
+}
+
+a {
+	color: #26363c;
+	text-decoration: none;
+}
+
+a::visited {
+	color: #26363c;
+	text-decoration: none;
 }
 
 .my-name {
@@ -61,8 +76,7 @@ height: 1000px;
 	top: 0;
 	position: fixed;
 	transition: all 0.5s ease;
-	z-index: 200;
-	/*transition: height .05s ease-in;*/
+	z-index: 250;
 }
 
 .top-shrink {
@@ -76,7 +90,7 @@ height: 1000px;
 	border-style: solid;
 	border-width: 0px 0px 2px 0px;
 	border-color: #4d96ea;
-	/*transition: height .05s ease-in;*/
+	z-index: 250;
 }
 
 .intro-whitespace {
@@ -114,6 +128,25 @@ height: 1000px;
 	margin-top: -20px;
 }
 
+
+.logo {
+	position: absolute;
+	left: 0;
+	width: 2rem;
+	height: 2rem;
+	margin-left: 15px;
+	margin-top: 10px;
+	background-image: url(logoN-01.svg);
+	background-size: 100% 100%;
+	display: none;
+}
+
+.logo:hover {
+	filter: drop-shadow(1px 1px #4d96ea);
+	cursor: pointer;
+}
+
+
 .block-stack {
 	display: block;
 	width: 100%;
@@ -122,6 +155,15 @@ height: 1000px;
 	float: left;
 	background-color: grey;
 	box-sizing: border-box;
+	transition: 0.5s;
+	cursor: normal;
+	z-index: 50;
+}
+
+.block-stack:hover {
+	opacity: 0.5;
+	cursor: normal;
+	z-index: 50;
 }
 
 .block-tall {
@@ -130,6 +172,15 @@ height: 1000px;
 	height: 40vw;
 	background-color: red;
 	float: left;
+	transition: 0.5s;
+	cursor: normal;
+	z-index: 50;
+}
+
+.block-tall:hover {
+	opacity: 0.5;
+	cursor: normal;
+	z-index: 50;
 }
 
 .stack {
@@ -149,11 +200,12 @@ height: 1000px;
 
 
 .title-block {
-	display: block;
+	/*display: block;*/
 	height: inherit;
 	width: 30px;
 	background-color: #f5f4fb;
 	background-color: yellow;
+	display: none;
 }
 
 .r {
@@ -218,7 +270,6 @@ height: 1000px;
   position: relative;
   transform: rotate(0deg);
   transition: .5s ease-in-out;
-  cursor: pointer;
   margin-left: 10px;
   margin-top: 18px;
 }
@@ -274,6 +325,45 @@ height: 1000px;
   border-bottom-left-radius: 0px;
 }
 
+.menu {
+	position: absolute;
+	width: 80px;
+	height: 100px;
+	right: 0;
+	margin-right: 50px;
+	margin-top: 80px;
+	z-index: 202;
+	font-size: 0.7rem;
+	text-align: right;
+}
+
+.page-link {
+	display: none;
+	width: 100%;
+	height: 33.33%;
+	float: left;
+}
+
+/*.page-link-visible {
+	display: block;
+	width: 100%;
+	height: 33.33%;
+	float: left;
+}*/
+
+.page-link:hover {
+	color: #4d96ea;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 	.stack {
@@ -299,3 +389,5 @@ height: 1000px;
 
 
 }
+
+
