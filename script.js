@@ -66,3 +66,5 @@ $('.block-stack').hover(function(){
 	console.log("This is the substring: " + newID);
 	$(newID).toggle();
 });
+	
+});
