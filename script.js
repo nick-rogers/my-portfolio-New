@@ -54,4 +54,15 @@ $('#nav-icon3').click(function(){
 
 
 
+
+
+// Hover over projects to make the title visible 
+
+$('.block-stack').hover(function(){
+	var theID = $(this).attr('id');
+	var newString = theID + "_";
+	var sub = newString.charAt(2);
+	var newID = ".t0"+sub;
+	console.log("This is the substring: " + newID);
+	$(newID).toggle();
 });
